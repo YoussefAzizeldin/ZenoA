@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build output
+dist/
+dist-electron/
+coverage/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Electron / app runtime
+.wa-auth/
+.wwebjs_cache/
+*.log
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Temporary files
+tmp/

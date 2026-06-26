@@ -1,0 +1,51 @@
+{
+  "lmStudioBaseUrl": "http://localhost:1234/v1",
+  "lmStudioModel": "google/gemma-4-e4b",
+  "obsidianVaultPath": "",
+  "systemPrompt": "You are Zeno, a highly intelligent personal AI assistant built for Youssef.\nSpeak like a serious, calm, professional assistant — think Jarvis from Iron Man.\nBe direct, precise, and helpful. Do not be overly cheerful or use filler phrases.\nYou have access to Youssef's Obsidian vault as your second brain.\nWhen relevant context from the vault is provided, use it to give more accurate and personalized answers.\nDo not hallucinate or make up information about the user's notes.\nKeep responses concise unless depth is needed.",
+  "maxContextTokens": 4000,
+  "temperature": 0.7,
+  "theme": "dark",
+  "activeProvider": "lmstudio",
+  "claudeEnabled": false,
+  "claudeApiKey": "",
+  "whatsappEnabled": true,
+  "whatsappAutoReply": true,
+  "whatsappBusyScript": "Hello, this is Zeno, Youssef's assistant. Youssef is currently busy, but I can take a message for him.\n\nPlease choose one of the options so I can help you:\n\n1. Who/What is Zeno\n2. What is currently on Youssef's schedule\n3. I'd like to talk to you, Zeno\n4. I need to talk to Youssef directly\n5. Cancel",
+  "whatsappZenoDescription": "Zeno is Youssef's personal AI assistant. I help manage messages, reminders, notes, tasks, and requests while he is busy.",
+  "whatsappScheduleItems": [
+    {
+      "id": "si-1778679409879",
+      "text": "Final Exam: DSA",
+      "active": true
+    },
+    {
+      "id": "si-1778679423208",
+      "text": "Final Exam: Data Analytics",
+      "active": true
+    },
+    {
+      "id": "si-1778679431226",
+      "text": "Final Exam: Linear Algebra",
+      "active": true
+    },
+    {
+      "id": "si-1778679438161",
+      "text": "Final Exam: Data Comm",
+      "active": true
+    },
+    {
+      "id": "si-1778679447452",
+      "text": "Final Exam: Astrology",
+      "active": true
+    },
+    {
+      "id": "si-1778679456380",
+      "text": "Update's to Zeno",
+      "active": true
+    }
+  ],
+  "pcBridgeEnabled": true,
+  "pcBridgeUrl": "100.85.168.18:1234",
+  "devModeProjectPath": "C:\\Users\\youps\\Downloads\\zeno_out"
+}

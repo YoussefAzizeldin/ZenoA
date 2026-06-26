@@ -1,0 +1,64 @@
+{
+  "name": "zeno",
+  "version": "1.1.0",
+  "description": "Zeno - Jarvis-style AI assistant powered by LM Studio",
+  "main": "dist-electron/main.js",
+  "scripts": {
+    "dev": "node dev.js",
+    "build": "vite build && tsc -p tsconfig.electron.json && electron-builder",
+    "dist:portable": "vite build && tsc -p tsconfig.electron.json && electron-builder --win dir --publish never",
+    "build:renderer": "vite build",
+    "build:electron": "tsc -p tsconfig.electron.json",
+    "preview": "vite preview",
+    "preelectron": "npm run build:electron",
+    "electron": "node launch-electron.js",
+    "lint": "eslint \"src/**/*.{ts,tsx}\" \"electron/**/*.ts\""
+  },
+  "dependencies": {
+    "axios": "^1.6.7",
+    "date-fns": "^3.3.1",
+    "dotenv": "^16.4.5",
+    "electron-store": "^8.1.0",
+    "glob": "^10.3.10",
+    "gray-matter": "^4.0.3",
+    "qrcode": "^1.5.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-markdown": "^9.0.1",
+    "remark-gfm": "^4.0.0",
+    "zustand": "^4.5.0"
+  },
+  "optionalDependencies": {
+    "qrcode-terminal": "^0.12.0",
+    "whatsapp-web.js": "^1.23.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^20.11.19",
+    "@types/qrcode": "^1.5.6",
+    "@types/react": "^18.2.55",
+    "@types/react-dom": "^18.2.19",
+    "@vitejs/plugin-react": "^6.0.0",
+    "electron": "^42.0.1",
+    "electron-builder": "^26.8.1",
+    "eslint": "^10.3.0",
+    "globals": "^17.6.0",
+    "typescript": "^5.3.3",
+    "typescript-eslint": "^8.59.2",
+    "vite": "^8.0.11"
+  },
+  "build": {
+    "appId": "com.zeno.assistant",
+    "productName": "Zeno",
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icon.ico",
+      "signAndEditExecutable": false
+    },
+    "files": [
+      "dist/**/*",
+      "dist-electron/**/*",
+      "assets/**/*"
+    ]
+  }
+}
